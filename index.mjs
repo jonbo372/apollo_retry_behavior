@@ -97,7 +97,7 @@ const retryLink = new RetryLink({
         // error.result. It's being parsed and attached to the error at 
         // @apollo/client/link/http/parseAndCheckHttpResponse.js:120
         // also see https://www.apollographql.com/docs/react/api/link/apollo-link-http#handling-errors
-        return error.statusCode >= 400 && error.statusCode < 600;
+        return error.statusCode >= 500 && error.statusCode < 600;
       }
 
       console.error("Error type:", error.constructor.name);
