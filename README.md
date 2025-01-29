@@ -13,3 +13,7 @@ without a response. And of course, don't even start it and see the behavior.
 Other tests, using iptables to cut connections and more (so a tiny bit of
 "chaos" testing). Guess I could have used Gremlin or something but didn't.
 
+Have not been able to figure out how to set:
+* TCP socket timeout etc.
+* Connection pooling settings, such as connection re-use, max open connection etc
+
